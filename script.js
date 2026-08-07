@@ -31,3 +31,24 @@ window.addEventListener("scroll",()=>{
     }
 
 });
+document.querySelectorAll(".writer-slider, .book-slider, .deneme-slider, .story-slider").forEach(slider => {
+
+    const container = slider.querySelector(
+        ".writer-container, .book-container, .deneme-container, .story-container"
+    );
+
+    slider.querySelector(".left").onclick = () => {
+        container.scrollBy({
+            left: -360,
+            behavior: "smooth"
+        });
+    };
+
+    slider.querySelector(".right").onclick = () => {
+        container.scrollBy({
+            left: 360,
+            behavior: "smooth"
+        });
+    };
+
+});
