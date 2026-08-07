@@ -916,6 +916,17 @@ footer{
     box-shadow:0 0 30px rgba(255,213,106,.4);
     margin-bottom:25px;
 }
+.book-page a,
+main a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.book-page a:hover,
+main a:hover{
+    color:#FFD56A;
+}
 .author-photo{
     transition:.35s;
 }
