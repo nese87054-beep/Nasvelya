@@ -395,6 +395,9 @@ width:100%;
 
 }
 .header{
+    margin-top:90px;
+}
+.header{
 
 display:flex;
 flex-direction:column;
@@ -642,4 +645,10 @@ font-size:.8rem;
 
 font-weight:bold;
 
+}
+.writer-container{
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    flex-wrap:wrap;
 }
