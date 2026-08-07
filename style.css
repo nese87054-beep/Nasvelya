@@ -14,14 +14,17 @@ html{
 
 body{
 
-    font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+font-family:Segoe UI,Tahoma,sans-serif;
 
-    background:
-    radial-gradient(circle at top,#3d2b75 0%,#151530 35%,#090914 100%);
+color:white;
 
-    color:white;
+background:
+radial-gradient(circle at top,#5636a8 0%,#221b53 30%,#090914 70%,#040408 100%);
 
-    line-height:1.7;
+background-attachment:fixed;
+
+overflow-x:hidden;
+
 }
 
 
@@ -29,35 +32,43 @@ body{
 
 .navbar{
 
-    position:sticky;
-    top:0;
+position:fixed;
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+top:0;
 
-    padding:18px 8%;
+width:100%;
 
-    background:rgba(9,9,20,.75);
+padding:20px 8%;
 
-    backdrop-filter:blur(15px);
+display:flex;
 
-    border-bottom:1px solid rgba(255,255,255,.08);
+justify-content:space-between;
 
-    z-index:999;
+align-items:center;
+
+background:rgba(7,7,20,.65);
+
+backdrop-filter:blur(18px);
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+z-index:999;
+
 }
 
 .logo{
 
-    font-size:2rem;
+font-size:2.2rem;
 
-    color:#FFD56A;
+font-weight:bold;
 
-    font-weight:bold;
+letter-spacing:4px;
 
-    letter-spacing:3px;
+color:#FFD56A;
+
+text-shadow:0 0 18px rgba(255,213,106,.45);
+
 }
-
 .menu{
 
     display:flex;
@@ -217,30 +228,28 @@ body{
 
 .person-card{
 
-    background:rgba(255,255,255,.05);
+width:320px;
 
-    backdrop-filter:blur(18px);
+padding:30px;
 
-    border-radius:22px;
+border-radius:25px;
 
-    padding:30px;
+background:rgba(255,255,255,.06);
 
-    width:320px;
+backdrop-filter:blur(20px);
 
-    margin:25px auto;
+transition:.4s;
 
-    text-align:center;
-
-    border:1px solid rgba(255,255,255,.08);
-
-    transition:.35s;
 }
 
 .person-card:hover{
 
-    transform:translateY(-12px);
+transform:translateY(-12px) scale(1.03);
 
-    box-shadow:0 0 30px rgba(255,214,106,.35);
+box-shadow:
+
+0 0 35px rgba(255,213,106,.25);
+
 }
 
 .person-card img{
@@ -438,5 +447,48 @@ margin-top:15px;
 font-style:italic;
 
 color:#ddd;
+
+}
+
+.stars{
+
+position:fixed;
+
+width:100%;
+height:100%;
+
+top:0;
+left:0;
+
+pointer-events:none;
+
+background-image:
+
+radial-gradient(white 1px,transparent 1px),
+radial-gradient(#FFD56A 1px,transparent 1px);
+
+background-size:120px 120px,220px 220px;
+
+opacity:.22;
+
+z-index:-1;
+
+animation:stars 35s linear infinite;
+
+}
+
+@keyframes stars{
+
+from{
+
+transform:translateY(0);
+
+}
+
+to{
+
+transform:translateY(-220px);
+
+}
 
 }
