@@ -716,6 +716,27 @@ transition:.35s;
 box-shadow:0 0 20px rgba(0,0,0,.3);
 
 }
+.book-card{
+    position: relative;
+    overflow: hidden;
+}
+.book-card .badge{
+    position:absolute;
+    top:15px;
+    left:15px;
+
+    margin:0;
+
+    background:#FFD56A;
+    color:#111;
+    padding:8px 16px;
+    border-radius:20px;
+    font-weight:bold;
+    z-index:2;
+}
+.book-card .badge:nth-of-type(2){
+    top:60px;
+}
 .book-container{
     display:flex;
     justify-content:center;
