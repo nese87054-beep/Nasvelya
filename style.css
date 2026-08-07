@@ -931,9 +931,28 @@ font-weight:bold;
 }
 .writer-container{
     display:flex;
-    justify-content:center;
     gap:35px;
-    flex-wrap:wrap;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    flex-wrap:nowrap;
+    justify-content:flex-start;
+    padding:10px;
+}
+.writer-slider{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+.writer-container::-webkit-scrollbar{
+    display:none;
+}
+
+.writer-container{
+    scrollbar-width:none;
+}
+.writer-container{
+    padding-left:20px;
+    padding-right:20px;
 }
 
 /* ==========================
@@ -2178,9 +2197,9 @@ text-shadow:0 0 10px #FFD56A;
 .book-slider,
 .deneme-slider,
 .story-slider{
-    position:relative;
     display:flex;
     align-items:center;
+    gap:20px;
 }
 
 .writer-container,
@@ -2189,12 +2208,11 @@ text-shadow:0 0 10px #FFD56A;
 .story-container{
     display:flex;
     gap:35px;
-
+    flex-wrap:nowrap;
     overflow-x:auto;
     scroll-behavior:smooth;
-
-    flex-wrap:nowrap;
-
+    justify-content:flex-start;
+    padding:10px;
     scrollbar-width:none;
 }
 
@@ -2238,4 +2256,15 @@ text-shadow:0 0 10px #FFD56A;
 
 .arrow.right{
     order:3;
+}
+.arrow{
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:#FFD56A;
+    color:#111;
+    font-size:28px;
+    cursor:pointer;
+    flex-shrink:0;
 }
