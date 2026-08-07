@@ -567,6 +567,7 @@ footer{
 
 .deneme-card a:hover{
     transform:scale(1.05);
+    box-shadow:0 8px 25px rgba(255,213,106,.4);
 }
 
 /* ==========================
@@ -600,6 +601,10 @@ footer{
 .book-card:hover{
     transform:translateY(-10px);
     box-shadow:0 0 30px rgba(255,213,106,.35);
+}
+.book-card a:hover{
+    transform:scale(1.05);
+    box-shadow:0 8px 25px rgba(255,213,106,.4);
 }
 .book-card .badge{
     position:absolute;
@@ -647,7 +652,13 @@ footer{
     color:#111;
     font-weight:bold;
 }
+.book-card a{
+    transition:.35s;
+}
 
+.deneme-card a{
+    transition:.35s;
+}
 /* ==========================
         HABERLER
 ========================== */
@@ -723,6 +734,16 @@ footer{
     border-radius:22px;
     overflow:hidden;
     border:1px solid rgba(255,255,255,.08);
+}
+.story-card a{
+    display:inline-block;
+    margin-bottom:25px;
+    padding:12px 30px;
+    border-radius:30px;
+    background:linear-gradient(45deg,#FFD56A,#FF914D);
+    color:#111;
+    text-decoration:none;
+    transition:.35s;
 }
 .story-card:hover{
     transform:translateY(-10px);
