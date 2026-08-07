@@ -655,3 +655,339 @@ font-weight:bold;
     gap:35px;
     flex-wrap:wrap;
 }
+
+/* ==========================
+        KİTAPLAR
+========================== */
+
+#books{
+
+width:90%;
+
+margin:100px auto;
+
+}
+
+#books h2{
+
+text-align:center;
+
+font-size:2.6rem;
+
+color:#FFD56A;
+
+margin-bottom:45px;
+
+}
+
+.book-card{
+
+width:340px;
+
+margin:auto;
+
+background:rgba(255,255,255,.06);
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:22px;
+
+overflow:hidden;
+
+text-align:center;
+
+transition:.35s;
+
+box-shadow:0 0 20px rgba(0,0,0,.3);
+
+}
+
+.book-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 0 30px rgba(255,213,106,.35);
+
+}
+
+.book-card img{
+
+width:100%;
+
+height:430px;
+
+object-fit:cover;
+
+}
+
+.book-card h3{
+
+margin:20px 0 10px;
+
+color:#FFD56A;
+
+}
+
+.book-card p{
+
+padding:0 20px;
+
+margin-bottom:25px;
+
+color:#ddd;
+
+}
+
+.book-card a{
+
+display:inline-block;
+
+margin-bottom:25px;
+
+padding:12px 30px;
+
+border-radius:30px;
+
+background:linear-gradient(45deg,#FFD56A,#FF914D);
+
+color:#111;
+
+font-weight:bold;
+
+text-decoration:none;
+
+transition:.35s;
+
+}
+
+.book-card a:hover{
+
+transform:scale(1.05);
+
+box-shadow:0 8px 25px rgba(255,213,106,.4);
+
+}
+
+/* ==========================
+        HABERLER
+========================== */
+
+#news{
+
+width:90%;
+
+margin:100px auto;
+
+}
+
+#news h2{
+
+text-align:center;
+
+font-size:2.6rem;
+
+color:#FFD56A;
+
+margin-bottom:45px;
+
+}
+
+.news-container{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:30px;
+
+}
+
+.news-card{
+
+width:360px;
+
+padding:30px;
+
+background:rgba(255,255,255,.06);
+
+backdrop-filter:blur(18px);
+
+border-radius:22px;
+
+border:1px solid rgba(255,255,255,.08);
+
+transition:.35s;
+
+}
+
+.news-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 0 30px rgba(255,213,106,.3);
+
+}
+
+.news-card h3{
+
+color:#FFD56A;
+
+margin-bottom:15px;
+
+}
+
+.news-card p{
+
+color:#ddd;
+
+line-height:1.6;
+
+margin-bottom:20px;
+
+}
+
+.news-card span{
+
+color:#FFD56A;
+
+font-weight:bold;
+
+}
+
+/* ==========================
+        ÖYKÜLER
+========================== */
+
+#stories{
+
+width:90%;
+
+margin:100px auto;
+
+text-align:center;
+
+}
+
+#stories h2{
+
+font-size:2.6rem;
+
+color:#FFD56A;
+
+margin-bottom:25px;
+
+}
+
+#stories p{
+
+max-width:700px;
+
+margin:auto;
+
+color:#ddd;
+
+line-height:1.8;
+
+}
+
+/* ==========================
+        HAKKIMIZDA
+========================== */
+
+#about{
+
+width:90%;
+
+margin:100px auto;
+
+text-align:center;
+
+background:rgba(255,255,255,.05);
+
+padding:50px;
+
+border-radius:25px;
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+#about h2{
+
+color:#FFD56A;
+
+font-size:2.6rem;
+
+margin-bottom:25px;
+
+}
+
+#about p{
+
+max-width:800px;
+
+margin:auto;
+
+color:#ddd;
+
+line-height:1.9;
+
+}
+
+/* ==========================
+        İLETİŞİM
+========================== */
+
+#contact{
+
+width:90%;
+
+margin:100px auto;
+
+text-align:center;
+
+}
+
+#contact h2{
+
+font-size:2.6rem;
+
+color:#FFD56A;
+
+margin-bottom:30px;
+
+}
+
+#contact p{
+
+margin:18px 0;
+
+font-size:1.1rem;
+
+color:#ddd;
+
+}
+
+#contact a{
+
+color:#FFD56A;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+#contact a:hover{
+
+color:white;
+
+text-shadow:0 0 10px #FFD56A;
+
+}
