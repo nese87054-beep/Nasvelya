@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://nese87054-beep.github.io/Nasvelya/sitemap.xml
