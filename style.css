@@ -2170,3 +2170,72 @@ color:white;
 text-shadow:0 0 10px #FFD56A;
 
 }
+/* ==========================
+        SLIDER
+========================== */
+
+.writer-slider,
+.book-slider,
+.deneme-slider,
+.story-slider{
+    position:relative;
+    display:flex;
+    align-items:center;
+}
+
+.writer-container,
+.book-container,
+.deneme-container,
+.story-container{
+    display:flex;
+    gap:35px;
+
+    overflow-x:auto;
+    scroll-behavior:smooth;
+
+    flex-wrap:nowrap;
+
+    scrollbar-width:none;
+}
+
+.writer-container::-webkit-scrollbar,
+.book-container::-webkit-scrollbar,
+.deneme-container::-webkit-scrollbar,
+.story-container::-webkit-scrollbar{
+    display:none;
+}
+
+.person-card,
+.book-card,
+.deneme-card,
+.story-card{
+    flex:0 0 auto;
+}
+
+/* Oklar */
+
+.arrow{
+    width:48px;
+    height:48px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#FFD56A;
+    color:#111;
+
+    font-size:24px;
+    cursor:pointer;
+
+    margin:0 10px;
+
+    transition:.3s;
+}
+
+.arrow:hover{
+    transform:scale(1.1);
+}
+
+.arrow.right{
+    order:3;
+}
