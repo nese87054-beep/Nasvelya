@@ -940,3 +940,69 @@ main a:hover{
     transform:scale(1.05);
     box-shadow:0 0 40px rgba(255,213,106,.6);
 }
+/* ==========================
+      MOBİL KARTLAR
+========================== */
+
+@media (max-width:768px){
+
+    /* Kaydırmalı alanların dışarı taşmasını engelle */
+    .writer-container,
+    .book-container,
+    .deneme-container,
+    .story-container{
+        width:100%;
+        padding:10px 5px;
+        gap:20px;
+    }
+
+    /* TÜM KARTLAR */
+    .person-card,
+    .book-card,
+    .deneme-card,
+    .story-card{
+        flex:0 0 calc(100vw - 50px);
+        width:calc(100vw - 50px);
+        max-width:340px;
+    }
+
+    /* KİTAP KAPAĞI */
+    .book-card img{
+        width:100%;
+        height:auto;
+        max-height:none;
+        object-fit:contain;
+    }
+
+    /* YAZAR FOTOĞRAFI */
+    .person-card img{
+        max-width:170px;
+        width:100%;
+        height:170px;
+        object-fit:cover;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    /* DENEME GÖRSELLERİ */
+    .deneme-card img{
+        width:100%;
+        height:auto;
+        object-fit:cover;
+    }
+
+    /* ÖYKÜ GÖRSELLERİ */
+    .story-card img{
+        width:100%;
+        height:auto;
+        object-fit:cover;
+    }
+
+    /* OKLAR */
+    .arrow{
+        width:40px;
+        height:40px;
+        font-size:22px;
+        margin:0 3px;
+    }
+}
