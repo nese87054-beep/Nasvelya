@@ -1006,3 +1006,201 @@ main a:hover{
         margin:0 3px;
     }
 }
+/* =========================
+   ALINTILAR BÖLÜMÜ
+========================= */
+
+#lines {
+  width: min(1100px, 90%);
+  margin: 100px auto;
+  padding: 40px 0;
+}
+
+
+/* BAŞLIK */
+
+.lines-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.lines-header h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.lines-header p {
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.lines-header h3 {
+  margin-top: 25px;
+  font-size: 20px;
+}
+
+
+/* =========================
+   ALINTI SATIRLARI
+========================= */
+
+.quote-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 70px;
+
+  min-height: 350px;
+  margin-bottom: 100px;
+}
+
+
+/* =========================
+   YAZILAR
+========================= */
+
+.quote-text {
+  font-size: 21px;
+  line-height: 1.8;
+}
+
+.quote-text p {
+  margin-bottom: 20px;
+}
+
+.quote-text em {
+  display: block;
+  font-size: 16px;
+  opacity: 0.75;
+}
+
+
+/* =========================
+   GÖRSELLER
+========================= */
+
+.quote-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-image img {
+  width: 100%;
+  max-width: 420px;
+  height: 300px;
+
+  object-fit: cover;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 10px 35px rgba(0, 0, 0, 0.35);
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+
+/* Görselin üzerine gelince */
+
+.quote-image img:hover {
+  transform: scale(1.03);
+
+  box-shadow:
+    0 15px 45px rgba(0, 0, 0, 0.5);
+}
+
+
+/* =========================
+   1. SATIR
+   YAZI SOL - GÖRSEL SAĞ
+========================= */
+
+.quote-row-one {
+  grid-template-columns: 1fr 1fr;
+}
+
+
+/* =========================
+   2. SATIR
+   GÖRSEL SOL - YAZI SAĞ
+========================= */
+
+.quote-row-two {
+  grid-template-columns: 1fr 1fr;
+}
+
+
+/* =========================
+   3. SATIR
+========================= */
+
+.quote-row-three {
+  display: block;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+}
+
+
+/* =========================
+   MOBİL
+========================= */
+
+@media (max-width: 768px) {
+
+  #lines {
+    width: 90%;
+    margin: 60px auto;
+  }
+
+  .lines-header {
+    margin-bottom: 50px;
+  }
+
+  .lines-header h2 {
+    font-size: 32px;
+  }
+
+  .lines-header h3 {
+    font-size: 17px;
+  }
+
+  .quote-row {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 70px;
+  }
+
+  /*
+     Mobilde 2. alıntının
+     görseli yine önce gelsin.
+  */
+
+  .quote-row-two .quote-image {
+    order: 1;
+  }
+
+  .quote-row-two .quote-text {
+    order: 2;
+  }
+
+  .quote-text {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .quote-text em {
+    font-size: 15px;
+  }
+
+  .quote-image img {
+    width: 100%;
+    height: 250px;
+  }
+
+}
