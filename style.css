@@ -411,24 +411,49 @@ footer{
 .story-card{
     flex:0 0 320px;
 }
+/* ==========================
+        SLIDER OKLARI
+========================== */
 
-/* Oklar */
 .arrow{
-    width:50px;
-    height:50px;
+    width:34px;
+    height:34px;
+
     border:none;
     border-radius:50%;
-    background:#FFD56A;
-    color:#111;
-    font-size:28px;
+
+    background:rgba(255,213,106,.28);
+    color:rgba(255,255,255,.85);
+
+    font-size:17px;
+    font-weight:bold;
+
     cursor:pointer;
-    margin:0 10px;
-    transition:.3s;
+
+    margin:0 5px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    transition:
+        background .25s ease,
+        opacity .25s ease,
+        transform .25s ease;
+
     flex-shrink:0;
+
+    opacity:.65;
 }
 
 .arrow:hover{
-    transform:scale(1.1);
+    background:rgba(255,213,106,.65);
+    opacity:1;
+    transform:scale(1.08);
+}
+
+.arrow:active{
+    transform:scale(.95);
 }
 
 .arrow.right{
@@ -956,14 +981,14 @@ main a:hover{
         height:auto;
         object-fit:cover;
     }
-
-    /* OKLAR */
-    .arrow{
-        width:40px;
-        height:40px;
-        font-size:22px;
-        margin:0 3px;
-    }
+/* OKLAR */
+.arrow{
+    width:30px;
+    height:30px;
+    font-size:14px;
+    margin:0 2px;
+    opacity:.5;
+}
 }
 /* =========================
    ALINTILAR BÖLÜMÜ
