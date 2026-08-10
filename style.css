@@ -40,122 +40,129 @@ overflow-x:hidden;
         NAVBAR
 ========================== */
 
-.navbar{
-    width:100%;
-    height:80px;
+.navbar {
+    width: 100%;
+    min-height: 72px;
+    padding: 0 30px;
 
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    padding:0 40px;
+    background: rgba(10, 7, 35, 0.92);
 
-    background:rgba(10, 7, 35, .85);
-    backdrop-filter:blur(15px);
-
-    border-bottom:1px solid rgba(255,255,255,.08);
-
-    position:relative;
-    z-index:100;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
-/* NASVELYA LOGO */
+/* NASVELYA */
 
-.logo{
-    flex-shrink:0;
+.logo {
+    flex-shrink: 0;
 }
 
-.logo a{
-    color:#FFD56A;
-    text-decoration:none;
+.logo a {
+    color: #FFD56A;
+    text-decoration: none;
 
-    font-size:2rem;
-    font-weight:800;
-    letter-spacing:3px;
+    font-size: 2rem;
+    font-weight: 800;
 
-    transition:.3s;
+    letter-spacing: 3px;
+    white-space: nowrap;
+
+    text-shadow: 0 0 12px rgba(255, 213, 106, .25);
 }
 
-.logo a:hover{
-    color:#FFE79A;
+.logo a:hover {
+    color: #FFD56A;
 }
 
 
 /* MENÜ */
 
-.menu{
-    display:flex;
-    align-items:center;
-    justify-content:flex-end;
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 
-    gap:22px;
-
-    margin-left:auto;
+    gap: 28px;
+    margin-left: auto;
 }
 
-.menu a{
-    color:#fff !important;
-    text-decoration:none !important;
+.menu a {
+    color: #fff !important;
+    text-decoration: none;
 
-    font-size:1.05rem;
-    font-weight:500;
+    font-size: 1.05rem;
+    font-weight: 500;
 
-    white-space:nowrap;
+    white-space: nowrap;
 
-    transition:.25s ease;
+    transition: .25s ease;
 }
 
-.menu a:hover{
-    color:#FFD56A !important;
+.menu a:hover {
+    color: #FFD56A !important;
 }
 
 
 /* ==========================
-        MOBİL NAVBAR
+        MOBİL
 ========================== */
 
-@media (max-width:768px){
+@media (max-width: 900px) {
 
-    .navbar{
-        height:68px;
-
-        padding:0 18px;
-
-        gap:18px;
-
-        overflow:hidden;
+    .navbar {
+        min-height: 65px;
+        padding: 0 18px;
     }
 
-    .logo a{
-        font-size:1.55rem;
-        letter-spacing:2px;
+    .logo a {
+        font-size: 1.65rem;
+        letter-spacing: 2px;
     }
 
-    .menu{
-        gap:16px;
+    .menu {
+        gap: 18px;
 
-        overflow-x:auto;
-        overflow-y:hidden;
+        overflow-x: auto;
+        scrollbar-width: none;
 
-        flex:1;
-
-        justify-content:flex-start;
-
-        scrollbar-width:none;
-
-        padding:5px 0;
+        padding-left: 20px;
     }
 
-    .menu::-webkit-scrollbar{
-        display:none;
+    .menu::-webkit-scrollbar {
+        display: none;
     }
 
-    .menu a{
-        font-size:.95rem;
+    .menu a {
+        font-size: .95rem;
     }
 }
 
 
+@media (max-width: 600px) {
+
+    .navbar {
+        min-height: 60px;
+        padding: 0 12px;
+    }
+
+    .logo a {
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+    }
+
+    .menu {
+        gap: 14px;
+        padding-left: 15px;
+    }
+
+    .menu a {
+        font-size: .85rem;
+    }
+}
 /* HERO */
 
 .hero{
