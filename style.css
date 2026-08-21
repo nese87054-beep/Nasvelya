@@ -1136,16 +1136,12 @@ main a:hover{
 }
 
 .quote-image img {
-  width: 100%;
-  max-width: 420px;
-  height: 300px;
-
+  width: 280px;
+  height: 420px;
   object-fit: cover;
+  border-radius: 12px;
 
-  border-radius: 20px;
-
-  box-shadow:
-    0 10px 35px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
 
   transition:
     transform 0.4s ease,
