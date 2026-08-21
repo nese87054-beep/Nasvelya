@@ -1138,7 +1138,7 @@ main a:hover{
 .quote-image img {
   width: 280px;
   height: 420px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 12px;
 
   box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
