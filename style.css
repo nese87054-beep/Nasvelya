@@ -624,36 +624,33 @@ footer{
     transition:.35s;
 }
 
+
 /* ==========================
        ŞİİRLER BÖLÜMÜ
 ========================== */
 
 #poes {
     width: 90%;
-    max-width: 1200px;
     margin: 100px auto;
-    padding: 45px 0;
-    text-align: center;
 }
 
 /* BAŞLIK */
 
-#poes > h2 {
-    color: #FFD56A;
+#poes h2 {
+    text-align: center;
     font-size: 2.6rem;
-    margin-bottom: 25px;
-    letter-spacing: 2px;
-    text-shadow: 0 0 18px rgba(255, 213, 106, .2);
+    color: #FFD56A;
+    margin-bottom: 45px;
 }
 
 /* AÇIKLAMA */
 
 #poes > p {
+    text-align: center;
     max-width: 700px;
     margin: 0 auto 45px;
     color: #ddd;
-    font-size: 1.1rem;
-    line-height: 1.9;
+    line-height: 1.8;
 }
 
 /* ŞİİR SLIDER */
@@ -661,27 +658,19 @@ footer{
 #poes .story-slider {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 18px;
-    width: 100%;
+    gap: 20px;
 }
 
 /* KARTLARIN KAYDIRILDIĞI ALAN */
 
 #poes .story-container {
     display: flex;
+    gap: 35px;
     flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    gap: 30px;
-
-    width: 100%;
-    min-width: 0;
-    padding: 20px 10px 30px;
-
     overflow-x: auto;
     scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
+    justify-content: flex-start;
+    padding: 10px;
     scrollbar-width: none;
 }
 
@@ -692,172 +681,165 @@ footer{
 /* ŞİİR KARTI */
 
 #poes .story-card {
-    position: relative;
-    flex: 0 0 300px;
-    width: 300px;
-    min-width: 0;
+    flex: 0 0 320px;
+    width: 320px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    overflow: hidden;
-    border-radius: 24px;
-    border: 1px solid rgba(255, 213, 106, .18);
-
-    background: linear-gradient(
-        145deg,
-        rgba(143, 91, 255, .14),
-        rgba(255, 255, 255, .045)
-    );
-
+    background: rgba(255,255,255,.06);
     backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
 
-    box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 22px;
+    overflow: hidden;
 
-    transition:
-        transform .35s ease,
-        border-color .35s ease,
-        box-shadow .35s ease;
-
-    scroll-snap-align: center;
+    transition: .35s;
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
 }
 
 /* KART HOVER */
 
 #poes .story-card:hover {
     transform: translateY(-10px);
-    border-color: rgba(255, 213, 106, .6);
+    box-shadow: 0 0 30px rgba(255,213,106,.35);
+}
 
-    box-shadow:
-        0 15px 35px rgba(0, 0, 0, .35),
-        0 0 25px rgba(143, 91, 255, .18);
+/* ŞİİR KAPAĞI */
+
+#poes .story-card img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
 }
 
 /* ŞİİR BAŞLIĞI */
 
 #poes .story-card h3 {
-    width: 100%;
-    min-height: 76px;
-    padding: 23px 15px 15px;
-    margin: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    text-align: center;
+    margin: 20px 15px 10px;
     color: #FFD56A;
     font-size: 1.2rem;
-    line-height: 1.5;
-}
-
-/* KAPAK GÖRSELİ */
-
-#poes .story-card img {
-    display: block;
-    width: calc(100% - 30px);
-    height: 300px;
-    margin: 5px 15px 0;
-
-    object-fit: cover;
-    object-position: center;
-
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, .1);
-
-    transition: transform .45s ease;
-}
-
-#poes .story-card:hover img {
-    transform: scale(1.025);
 }
 
 /* YAZAR ETİKETİ */
 
 #poes .story-card .badge {
     display: inline-block;
-    max-width: calc(100% - 30px);
-    margin: 20px 15px 18px;
-    padding: 9px 15px;
+    margin: 10px 18px 20px;
+    padding: 8px 18px;
 
-    background: rgba(143, 91, 255, .8);
-    color: #fff;
+    background: #FFD56A;
+    color: #111;
 
-    border: 1px solid rgba(255, 255, 255, .15);
     border-radius: 30px;
-
-    font-size: .78rem;
-    font-weight: 600;
-    line-height: 1.4;
-    overflow-wrap: anywhere;
+    font-size: .85rem;
+    font-weight: bold;
 }
 
 /* OKU BUTONU */
 
 #poes .story-card a {
-    display: inline-block;
-    margin: auto 0 25px;
-    padding: 12px 35px;
+    display: block;
+    width: 160px;
+    margin: 0 auto 25px;
+    padding: 13px;
+
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
 
     background: linear-gradient(45deg, #FFD56A, #FF914D);
-    color: #171020;
+    color: #111;
+    font-weight: bold;
 
-    border: none;
-    border-radius: 30px;
-    text-decoration: none;
-    font-size: .95rem;
-    font-weight: 700;
-
-    transition:
-        transform .3s ease,
-        box-shadow .3s ease;
+    transition: .35s;
 }
+
+/* BUTON HOVER */
 
 #poes .story-card a:hover {
-    color: #171020;
-    transform: translateY(-3px);
-
-    box-shadow: 0 8px 22px rgba(255, 170, 0, .3);
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(255,213,106,.4);
 }
 
-/* SLIDER OKLARI */
+/* ==========================
+       SLIDER OKLARI
+========================== */
 
 #poes .arrow {
-    flex: 0 0 42px;
-    width: 42px;
-    height: 42px;
-    margin: 0;
+    width: 34px;
+    height: 34px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255,213,106,.28);
+    color: rgba(255,255,255,.85);
+
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+
+    margin: 0 5px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    color: #FFD56A;
-    background: rgba(143, 91, 255, .18);
-
-    border: 1px solid rgba(255, 213, 106, .25);
-    border-radius: 50%;
-
-    font-size: 18px;
-    cursor: pointer;
-
-    transition:
-        background .3s ease,
-        transform .3s ease,
-        box-shadow .3s ease;
-
+    transition: .25s ease;
     flex-shrink: 0;
+    opacity: .65;
 }
 
 #poes .arrow:hover {
-    background: rgba(255, 213, 106, .2);
+    background: rgba(255,213,106,.65);
+    opacity: 1;
     transform: scale(1.08);
-    box-shadow: 0 0 18px rgba(255, 213, 106, .15);
 }
 
 #poes .arrow:active {
-    transform: scale(.94);
+    transform: scale(.95);
+}
+
+/* ==========================
+       MOBİL
+========================== */
+
+@media (max-width: 768px) {
+
+    #poes {
+        width: 90%;
+        margin: 70px auto;
+    }
+
+    #poes h2 {
+        font-size: 2rem;
+    }
+
+    #poes .story-container {
+        width: 100%;
+        padding: 10px 5px;
+        gap: 20px;
+    }
+
+    #poes .story-card {
+        flex: 0 0 calc(100vw - 80px);
+        width: calc(100vw - 80px);
+        max-width: 340px;
+    }
+
+    #poes .story-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    #poes .arrow {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        margin: 0 2px;
+        opacity: .5;
+    }
 }
 
 /* ==========================
